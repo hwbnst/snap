@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>anton's confession</title>
+<style>
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        margin: 0;
+        padding: 0;
+        background-image: url("heart.jpg");
+    }
+    .container {
+        text-align: center;
+        margin-top: 100px;
+    }
+    .open-button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #a91e41;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .open-button:hover {
+        background-color: #b54173;
+    }
+    .confession-image {
+        display: none;
+        margin-top: 20px;
+    }
+    .confession-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <button class="open-button" onclick="openConfession()">Open Confession</button>
+    <div class="confession-image" id="confessionImage">
+        <img src="anton.jpg" alt="Confession Image">
+    </div>
+</div>
+
+<script>
+    function openConfession() {
+        var confessionImage = document.getElementById("confessionImage");
+        confessionImage.style.display = "block";
+    }
+</script>
+
+</body>
+</html>
